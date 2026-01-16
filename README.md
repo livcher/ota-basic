@@ -5,7 +5,7 @@ The sketch inside 'ota-basic' folder enables Arduino Software to load a new sket
 
 Aditionally, it makes a led blink on pin 2 to check that the ESP8266 is running.
 
-#Contents
+## Contents
   * [Prerequisites and limitations](#prerequisites-and-limitations)
   * [Installing software with Boards Manager](#installing-software-with-boards-manager)
   * [Flashing the esp8266 for the first time](#flashing-the-esp8266-for-the-first-time)
@@ -16,7 +16,7 @@ Aditionally, it makes a led blink on pin 2 to check that the ESP8266 is running.
 
 
 
-#Prerequisites and limitations:
+## Prerequisites and limitations:
 To use this sketch you need:
   - An esp8266 board
   - Arduino software 1.6.7 or later [Download here](https://www.arduino.cc/en/Main/Software)
@@ -26,7 +26,7 @@ If you edit this sketch, you must consider that, to make OTA work:
   - The sketch compiled size cannot be greater than 50% of the esp8266 memory
   - If you use File System Wrapper, you maximun sketch size must be: (TotalMemory-FilesystemSize)/2
 
-#Installing software with Boards Manager
+## Installing software with Boards Manager
  * Install the Arduino Software (1.6.7 version or later)
  * Update Board Manager with custom URL:Open up Arduino, then go to the Preferences (**File > Preferences**). Then, towards the bottom of the window, copy this URL into the “Additional Board Manager URLs” text box:
 
@@ -41,7 +41,7 @@ If you edit this sketch, you must consider that, to make OTA work:
  <p align="center"><img src ="./img/arduino-board-install.png?raw=true"></p>
  <p align="center"><img src ="./img/arduino-board-select.png?raw=true"></p>
 
-#Flashing the esp8266 for the first time
+## Flashing the esp8266 for the first time
 To make the esp8266 OTA ready we need to flash de initial firmware with a esp8266 flashing circuit. For example:
 
  <p align="center"><img src ="./img/arduino-board-flashing.png?raw=true"></p>
@@ -58,7 +58,7 @@ And set the configutarion of your programming circuit:
 
  Now, we can upload the sketch to de esp8266.
  
- #OTA programming
+ ## OTA programming
   Once we have flashed the firmware of the esp8266 with an OTA enabled firmware we need to restart Arduino Software and you can dissconect the programmer serial port (or maintain it connected to use serial port for debugging, for example).
   Now, in the **Tools > Port** menu we'll find a new option, starting with 'esp8266' and including a local IP address. We must select that serial port. After that, go to **Tools > Upload using** and select **OTA** option.
   
@@ -66,11 +66,11 @@ And set the configutarion of your programming circuit:
   
   Just try to upload de sketch and it'll upload over WIFI. **Note that WIFI programming is A LOT faster than serial programming**.
  
-#Issues and support
+## Issues and support
 
 If you encounter an issue, you are welcome to submit it here on Github: [https://github.com/esp8266-examples/ota-basic/issues](https://github.com/esp8266-examples/ota-basic/issues). Please provide as much context as possible: version which you are using (you can check it in Boards Manager), your sketch code, serial output, board model, IDE settings (board selection, flash size, etc).
 
-#Contributing
+## Contributing
 
 For minor fixes of code and documentation, go ahead and submit a pull request.
 
@@ -78,7 +78,7 @@ Larger changes (rewriting parts of existing code from scratch, adding new functi
 
 Feature branches with lots of small commits (especially titled "oops", "fix typo", "forgot to add file", etc.) should be squashed before opening a pull request. At the same time, please refrain from putting multiple unrelated changes into a single pull request.
 
-#License and credits
+## License and credits
 
 Arduino IDE is developed and maintained by the Arduino team. The IDE is licensed under GPL.
 
